@@ -490,3 +490,29 @@ section{
         flex-direction: column;
     }
 }
+
+/* Form message container styles */
+.form-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    display: none;  /* Hidden by default */
+}
+
+/* Error message styles */
+.form-message.error {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.1);  /* Light red background */
+    color: #ff0000;  /* Red text */
+    border: 1px solid #ff0000;  /* Red border */
+}
+
+/* Success message styles */
+.form-message.success {
+    display: block;
+    background-color: rgba(0, 255, 0, 0.1);  /* Light green background */
+    color: #00ff00;  /* Green text */
+    border: 1px solid #00ff00;  /* Green border */
+}

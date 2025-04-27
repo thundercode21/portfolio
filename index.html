@@ -157,29 +157,23 @@
     </section>
 
     <section class="contact" id="contact">
-
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
-
+        <form id="contactForm" action="process_form.php" method="POST">
             <div class="input-group">
-
                 <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="full_name" id="full_name" placeholder="Full Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </div>
-
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="tel" name="phone" id="phone" placeholder="0912345678" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required>
                 </div>
-
             </div>
-
             <div class="input-group-2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
+            <div id="formMessage" class="form-message"></div>
         </form>
     </section>
 
